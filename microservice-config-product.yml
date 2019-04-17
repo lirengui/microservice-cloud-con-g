@@ -35,6 +35,8 @@ eureka:
  instance:
   instanceId: ${spring.application.name}:${server.port}
   prefer-ip-address: true
+emp:
+ name: zhangsan
 ---
 server:
  port: 8001
@@ -50,7 +52,7 @@ spring:
  datasource:
   type: com.alibaba.druid.pool.DruidDataSource
   driver-class-name: com.mysql.cj.jdbc.Driver
-  url: jdbc:mysql://127.0.0.1:3306/springcloud_db01?serverTimezone=GMT%2B8
+  url: jdbc:mysql://127.0.0.1:3306/springcloud_db02?serverTimezone=GMT%2B8
   username: root
   password: root
   dbcp2:
